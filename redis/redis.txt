@@ -1,0 +1,24 @@
+redis
+
+관련 notion 주소 https://picturesque-staircase-f6e.notion.site/redis-773bcaf9230047fdb12a874d216f1345
+
+redis 인메모리 nosql데이터베이스로 인한 빠른 성능
+key-value로 구성된 단순화된 데이터
+key-value는 구조적으로 해시테이블을 사용함으로써 매우 빠른 성능으로 데이터 조회가능
+single thread 구조로 동시성 이슈 발생x(대부분의 rdb는 멀티쓰레드를 지원하여 동시성 이슈가 발생할 수 있음)
+window 기준 직접 설치가 불가능하기에 docker desktop을 이용하여 설치(default로 설치) redis는 기본적으로 리눅스 환경
+
+이후 powershell에서 docker ps로 설치확인(컨테이너 아이디, 이미지 등 태그 나오면 도커 프로그램 실행 확인) 주의  docker desktop켜놔야 함
+
+docker run --name redis-container -d -p 6379:6379 redis 설치 명령어
+이후 docker ps로 다시 확인(컨테이너가 하나 새로 생겼다면 정상 설치 완료됨)
+docker ps (현재 도커 위에서 실행되고 있는 프로그램이 무엇이 있는지 확인하는 명령어)
+
+docker로 설치한 redis접속
+docker ps → container ID확인
+docker exec -it <containerID> redis-cli     {docker(도커한테) exec(실행시킴) -it(입력값) a....(이 id를 가지고있는 프로그램한테)
+								redis-cli(이 명령어를 전달함)}
+
+redis cli (redis가 설치된 곳에서 이 명령어를 입력 시 redis로 접속하는 명령어)
+
+나가고 싶을 경우 exit 명령어 입력

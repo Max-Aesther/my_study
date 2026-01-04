@@ -1,0 +1,44 @@
+관련 notion 자료
+https://picturesque-staircase-f6e.notion.site/eks-spring-1c323940dccf8067a6c2ee4bbbaaa91a
+
+docker pull nginx
+nginx라는 docker hub에 올라와있는 이미지 다운
+
+ docker run --name mysql-container -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 mysql
+
+--name 이름 지정
+-d 백그라운드로 실행(-d옵션이 없을 시 해당 컨테이너를 실행한 터미널 창을 닫을 시 컨테이너 또한 자동종료되기에 보통
+은 이 옵션 사용)
+
+-p 3306:3306(외부포트(컨테이너포트):내부포트(프로그램 포트) 로컬에서 3306으로 접근시 컨테이너에서 3306으로 맵핑하여 연결해줌)
+
+mysql은 루트 패스워드 지정 필수
+
+맨 뒤 mysql은 mysql이미지를 사용하여 컨테이너를 만들어 실행한다.
+
+ docker run --name redis-container -d -p 6379:6379 redis
+(이 명령어를 실행시 redis 이미지가 필요하나 redis 이미지가 로컬에 없을시 알아서 땡겨오기에 run만으로도 실행가능하기는함)
+
+intelij에서 스프링 프로젝트 사용시 루트디렉토리에 gradlew파일을 이용하여 jar를 파일 생성가능 터미널( powershell)에서
+.\gradlew bootjar 실행 완료 시 루트 디렉토리에 /build/libs폴더안에 만든 .jar파일이 생성됨
+/슬래시도 가능하나 powershell기준\역슬래시 권장(예 cd ./build,  cd.\build)
+ java -jar .\ordersystem-0.0.1-SNAPSHOT.jar (/build/libs경로안에서실행)
+
+도커 이미지 빌드
+docker build -t 이미지명:[태그명] -f <도커스크립트경로> <빌드컨텍스트위치>
+예(docker build -t my-spring:v1.0 .
+도커스크립트 경로는 명령어 실행하는 위치에 있다면 .으로대체가능
+-f는 명령어를 실행하는 위치가 도커파일이 있는 경로이고 파일 이름이 Dockerfile이라면 생략가능
+
+docker이용시 불편한점
+도커 컨테이너끼리 통신을 할때 호스트를 바꿔줘야 하는 점.
+일일이 도커 컨테이너를 생성해야 하는 점.
+
+docker에서 docker hub로 이미지를 푸시하는법(주의점 이미지이름은 레파지토리 이름과 같아야함 태그로 구분)
+(우선 docker hub에서 my hub -> 레파지토리 생성)
+로그아웃 먼저 docker logout
+docker login(이때 유저네임은 도커 닉네임)
+docker build -t kopper830/myspring:v1.1 .
+docker build -t my-spring:v1.0 .
+docker push kopper830/myspring:v1.1
+docker pull kopper830/myspring:v1.1(이미지 가져올시)

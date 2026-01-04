@@ -1,0 +1,21 @@
+## machine-learning(2025.03)
+실행 시 streamlit run을 사용하여 실행하시면 됩니다.
+python 버전: python 3.10.6
+2025.08.25 딥 러닝 모델 추가
+
+## jwt-tutorial(2025.08)
+post localhost:8080/join     body값 : username: admin  password: 1234
+post localhost:8080/login   header부분에서 authentication jwt토큰 값 확인
+get  localhost:8080/admin   header부분에 authentication jwt토큰 값 기입
+순으로 실행 시 정상적으로 jwt 인증 확인
+세션은 STATELESS 상태로 두었습니다.
+
+## flask api(2025.09)
+flask서버를 구현하여 jwt 로그인, 회원가입, 책 반납, 조회, 등록, 대출 등을 구현하였습니다.
+관련 클라이언트 테스트 파일도 함께 첨부되어있습니다.
+
+## redis(2025.12)
+redis 관련 명령어 및 구조에 대한 공부 진행
+
+## docker(2026.01)
+docker 구조, 명령어, 컨테이너, githubAction 등(다음 프로젝트 진행 시 배포 및 CI/CD 파이프 라인 등을 직접 구현해보고자 공부,  redis역시 동일)
