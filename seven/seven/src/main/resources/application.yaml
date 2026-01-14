@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: seven
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db:3306/testsystem?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  mustache:
+    servlet:
+      expose-request-attributes: true
+server:
+  servlet:
+    session:
+      timeout: 1800

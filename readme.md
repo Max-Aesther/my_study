@@ -19,3 +19,8 @@ redis 관련 명령어 및 구조에 대한 공부 진행
 
 ## docker(2026.01)
 docker 구조, 명령어, 컨테이너, githubAction 등(다음 프로젝트 진행 시 배포 및 CI/CD 파이프 라인 등을 직접 구현해보고자 공부,  redis역시 동일)
+
+## spring-security7(2026.01)
+spring security 7이 업데이트 되었다 하여 간단하게 로그인 회원 가입 등 필요한 부분만 설정하여 재구현해보았습니다.(jwt가 아닌
+.csrf 토큰 등)
+전에 배운 docker를 활용하여 docker build 및 compose하여 관련파일이 없어도 실행할 수 있게끔 구현해보았습니다.

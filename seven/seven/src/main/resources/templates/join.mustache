@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+    join page
+    <form action="/join" method="post">
+        <input type="text" name="username" required>
+        <input type="text" name="password" required>
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}">
+        <button type="submit">join</button>
+    </form>
+</body>
+</html>
