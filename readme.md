@@ -27,3 +27,5 @@ spring security 7이 업데이트 되었다 하여 간단하게 로그인 회원
 
 ## jwt(2026.01)
 spring security 7에 이어 access토큰 및 jwt토큰 로직을 추가구현(소셜 로그인 시 /login으로 작동하게끔 추가 업데이트하여 완성 예정)
+
+## kubernetes(eks), github action 등 추가 공부하여 간단한 프론트 백엔드 구현 후 배포하여 실제 클라우드 환경 경험 예정.
