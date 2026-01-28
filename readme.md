@@ -36,4 +36,4 @@ eks(kubernetes)+ rds(mysql)을 연동하여 spring서버를 모놀리직으로 �
 ## fastapi 2026/01
 의료 회사에서 인턴으로 근무를 하고 있어 의료 관련된 간단한 백엔드 로직을 fastapi를 사용하여 구현하였습니다.
 jwt(refrsh token: 14일(db저장 로그아웃 및 토큰 만료시 none처리), access token: 10분(클라이언트에 저장(서버간 통신은 헤더로 주고받음)) db: firebase, python: 3.13.11, 관련 firebase키값, .env에 값들은 일부 존재하지 않습니다.)
-이메일 인증 체크 로직 구현
+이메일 인증 체크 로직 구현, ai프롬프트 작성(open ai 사용)
