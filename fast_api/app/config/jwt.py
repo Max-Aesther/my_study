@@ -1,0 +1,11 @@
+import os
+
+ALGORITHM = os.getenv("JWT_ALGORITHM")
+
+ACCESS_TOKEN_EXPIRE_MINUTES = int(
+    os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 10)
+)
+
+REFRESH_TOKEN_EXPIRE_DAYS = int(
+    os.getenv("REFRESH_TOKEN_EXPIRE_DAYS", 14)
+)
