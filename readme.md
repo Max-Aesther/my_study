@@ -31,7 +31,7 @@ spring security 7에 이어 access토큰 및 jwt토큰 로직을 추가구현
 ## kubernetes(eks), github action 등 추가 공부하여 간단한 프론트 백엔드 구현 후 배포하여 실제 클라우드 환경 경험 예정.
 
 ## eks 2026/01
-eks(kubernetes)+ rds(mysql)을 연동하여 spring서버를 모놀리직으로 배포를 진행해보았습니다.(https인증서 연결 및 github action연동하여 진행, docker이미지는 ecr을 활용하여 진행, 도메인은 가비아에서 구입)
+eks(kubernetes)+ rds(mysql)을 연동하여 spring서버 배포를 진행해보았습니다.(https인증서 연결 및 github action연동하여 진행, docker이미지는 ecr을 활용하여 진행, 도메인은 가비아에서 구입)
 
 ## fastapi 2026/01
 의료 회사에서 인턴으로 근무를 하고 있어 의료 관련된 간단한 백엔드 로직을 fastapi를 사용하여 구현하였습니다.
