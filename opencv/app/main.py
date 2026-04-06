@@ -270,7 +270,7 @@ async def create_dataset(file: UploadFile = File(...)):
 # 학습용 dataset 생성 함수(자동으로 폴더에서 파일을 읽는 경우)
 def create_dataset_from_folder():
     
-    folder = r"C:\Users\noua0\OneDrive\Desktop\calling_dataset"
+    folder = r"C:\Users\your-name\OneDrive\Desktop\dataset"
     
     for file in os.listdir(folder):
 
