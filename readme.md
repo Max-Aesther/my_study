@@ -11,6 +11,7 @@ get  localhost:8080/admin   header부분에 authentication jwt토큰 값 기입
 세션은 STATELESS 상태로 두었습니다.
 
 ## flask api(2025.09)
+python: 3.10.6
 flask서버를 구현하여 jwt 로그인, 회원가입, 책 반납, 조회, 등록, 대출 등을 구현하였습니다.
 관련 클라이언트 테스트 파일도 함께 첨부되어있습니다.
 
@@ -21,11 +22,13 @@ redis 관련 명령어 및 구조에 대한 공부 진행
 docker 구조, 명령어, 컨테이너, githubAction 등(다음 프로젝트 진행 시 배포 및 CI/CD 파이프 라인 등을 직접 구현해보고자 공부,  redis역시 동일)
 
 ## spring-security7(2026.01)
+java: 21
 spring security 7이 업데이트 되었다 하여 간단하게 로그인 회원 가입 등 필요한 부분만 설정하여 재구현해보았습니다.(jwt가 아닌
 .csrf 토큰 등)
 전에 배운 docker를 활용하여 docker build 및 compose하여 관련파일이 없어도 실행할 수 있게끔 구현해보았습니다.
 
 ## jwt(2026.01)
+java: 21
 spring security 7에 이어 access토큰 및 jwt토큰 로직을 추가구현
 
 ## kubernetes(eks), github action 등 추가 공부하여 간단한 프론트 백엔드 구현 후 배포하여 실제 클라우드 환경 경험 예정.
@@ -39,6 +42,7 @@ jwt(refrsh token: 14일(db저장 로그아웃 및 토큰 만료시 none처리), 
 이메일 인증 체크 로직 구현, ai프롬프트 작성(open ai 사용)
 
 ## opencv 2026/04
+python: 3.11.6
 opencv 및 mediapipe를 활용하여 수어 번역 프로그램을 만들고 있었습니다.
 프레임 단위 및 슬라이딩 윈도우를 활용하여 단어 영상 학습 및 예측은 구현하였으나, 문장 번역의 경우 단어 경계를 구분하기 애매하여 CTC기술을 적용해보아
 모델을 재구성하여 문장까지도 학습 및 예측이 되게끔 구현할 예정입니다.
