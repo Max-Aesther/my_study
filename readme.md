@@ -37,7 +37,7 @@ spring security 7에 이어 access토큰 및 jwt토큰 로직을 추가구현
 eks(kubernetes)+ rds(mysql)을 연동하여 spring서버 배포를 진행해보았습니다.(https인증서 연결 및 github action연동하여 진행, docker이미지는 ecr을 활용하여 진행, 도메인은 가비아에서 구입)
 
 ## fastapi 2026/01
-의료 회사에서 인턴으로 근무를 하고 있어 의료 관련된 간단한 백엔드 로직을 fastapi를 사용하여 구현하였습니다.
+의료 ai회사에서 근무를 하고 있어 의료 관련된 간단한 백엔드 로직을 fastapi를 사용하여 구현하였습니다.
 jwt(refrsh token: 14일(db저장 로그아웃 및 토큰 만료시 none처리), access token: 10분(클라이언트에 저장(서버간 통신은 헤더로 주고받음)) db: firebase, python: 3.13.11, 관련 firebase키값, .env에 값들은 일부 존재하지 않습니다.)
 이메일 인증 체크 로직 구현, ai프롬프트 작성(open ai 사용)
 
